@@ -1,0 +1,4 @@
+Run xampp on Kali Linux
+Open Terminal as root
+run 
+chmod 755 '....run'
