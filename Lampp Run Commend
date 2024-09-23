@@ -1,4 +1,6 @@
 Run xampp on Kali Linux
-Open Terminal as root
-run 
-chmod 755 '....run'
+without root privillage
+
+sudo ./manager-linux-x64.run 
+
+type your password
