@@ -1,0 +1,28 @@
+
+git clone https://github.com/flutter/flutter.git -b stable
+
+==============================
+
+
+flutter 
+
+flutter doctor
+
+========================
+
+install sdk, emulator in android studio
+
+=======================
+check requirements or dependencies
+install flutter plugin
+===========================
+
+create flutter project 
+
+flutter crate appliation1
+
+======================
+
+test avd and flutter app
+
+=======================
