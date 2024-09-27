@@ -1,0 +1,3 @@
+cp -r purchase_order /opt/lampp/htdocs
+
+cp -r (source file) -> (/destination pwd)
