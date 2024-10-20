@@ -1,2 +1,10 @@
 _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
 grep "JAVA" /etc/environment.d/*
+
+
+
+Solution
+
+unset _JAVA_OPTIONS
+echo $_JAVA_OPTIONS
+java --version
