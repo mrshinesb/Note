@@ -1,0 +1,8 @@
+Terminal window
+npm install --save @fortawesome/fontawesome-svg-core
+
+# Select the styles you need and install them with the following commands.
+
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/free-regular-svg-icons
+npm install --save @fortawesome/free-brands-svg-icons
