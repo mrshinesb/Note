@@ -1,0 +1,22 @@
+Node js error
+
+sudo apt remove libnode-dev
+sudo apt install -y nodejs
+sudo apt autoremove
+sudo apt autoremove
+sudo apt autoremove
+sudo dpkg -i --force-overwrite /var/cache/apt/archives/nodejs_18.20.4-1nodesource1_amd64.deb
+sudo apt install -f
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+REOPEN TERMINAL
+[
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+]
+nvm install node
+
+for specific version
+nvm install 18
+check version
+node -v
+npm -v
