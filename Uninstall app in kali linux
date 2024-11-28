@@ -1,0 +1,20 @@
+sudo apt remove --purge code
+
+sudo apt remove --purge code-oss
+
+sudo apt autoremove --purge
+sudo apt clean
+
+rm -rf ~/.config/Code
+rm -rf ~/.vscode
+
+rm -rf ~/.config/Code\ -\ OSS
+rm -rf ~/.vscode-oss
+
+which code
+which code-oss
+
+sudo rm -f /usr/bin/code
+sudo rm -f /usr/bin/code-oss
+
+sudo update-alternatives --config code
