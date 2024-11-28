@@ -1,0 +1,11 @@
+Changing Default terminal in KaliLinux
+
+install Qterminal
+
+sudo apt install qterminal
+
+sudo update-alternatives --config x-terminal-emulator
+
+select your prefer number
+
+enjoy
