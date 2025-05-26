@@ -2,3 +2,12 @@ composer config -g repo.packagist composer https://mirrors.cloud.tencent.com/com
 composer require laravel/jetstream
 switch back to org
 composer config -g --unset repos.packagist
+
+
+alternatively
+
+composer config -g repo.packagist composer https://mirrors.cloud.tencent.com/composer/
+composer require laravel/breeze --dev
+php artisan breeze:install livewire
+npm install && npm run dev
+php artisan migrate
