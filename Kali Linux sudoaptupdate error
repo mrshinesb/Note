@@ -1,3 +1,7 @@
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED65462EC8D5E4C5
 If that doesn’t work, you can fetch and add the key directly like this:
 curl -fsSL https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive.gpg
+If error exit in upgrade
+sudo apt update
+sudo apt --fix-broken install
+sudo apt full-upgrade
