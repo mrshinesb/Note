@@ -1,0 +1,1 @@
+composer config -g repos.packagist composer https://mirrors.aliyun.com/composer/
