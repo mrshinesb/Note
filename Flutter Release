@@ -1,0 +1,7 @@
+flutter build apk --release
+OutPut Folder => build/app/outputs/flutter-apk/app-release.apk
+Install it to physical device using adb (adb install -r build/app/outputs/flutter-apk/app-release.apk)
+adb install -r build/app/outputs/flutter-apk/app-release.apk
+Run Key Tool
+
+keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias your_key_alias
