@@ -3,3 +3,5 @@ to install .run file _ directly open root terminal and drag and drop the .run fi
 install .run file
 chmod +x yourfile.run
 but alternatively just open terminal with sudo su and drag and drop file to it hit enter done....
+install vs code
+https://code.visualstudio.com/Download
