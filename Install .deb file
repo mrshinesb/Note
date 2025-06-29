@@ -5,3 +5,12 @@ chmod +x yourfile.run
 but alternatively just open terminal with sudo su and drag and drop file to it hit enter done....
 install vs code
 https://code.visualstudio.com/Download
+
+Install Flutter
+sudo apt update
+sudo apt install git curl unzip xz-utils zip libglu1-mesa -y
+cd ~
+git clone https://github.com/flutter/flutter.git -b stable
+echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
+source ~/.bashrc
+flutter doctor
