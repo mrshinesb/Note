@@ -1,2 +1,5 @@
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 to install .run file _ directly open root terminal and drag and drop the .run file on it 
+install .run file
+chmod +x yourfile.run
+but alternatively just open terminal with sudo su and drag and drop file to it hit enter done....
