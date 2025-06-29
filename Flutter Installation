@@ -1,0 +1,51 @@
+from fpdf import FPDF
+
+pdf = FPDF()
+pdf.add_page()
+pdf.set_font("Arial", size=12)
+
+title = "Install Flutter Globally on Kali Linux"
+steps = [
+    "1. Install Required Dependencies\n"
+    "Run the following command to install necessary packages:\n"
+    "sudo apt update\n"
+    "sudo apt install curl git unzip xz-utils zip libglu1-mesa",
+
+    "2. Download Flutter SDK\n"
+    "cd /opt\n"
+    "sudo git clone https://github.com/flutter/flutter.git -b stable",
+
+    "3. Set Environment Variables\n"
+    "sudo nano /etc/profile.d/flutter.sh\n"
+    "Add the line:\n"
+    "export PATH=\"$PATH:/opt/flutter/bin\"\n"
+    "Then run:\n"
+    "source /etc/profile.d/flutter.sh",
+
+    "4. Run Flutter Doctor\n"
+    "flutter doctor\n"
+    "Follow instructions to install missing components.",
+
+    "5. (Optional) Install Android Studio\n"
+    "sudo snap install android-studio --classic",
+
+    "6. (Optional) Enable Desktop Support\n"
+    "flutter config --enable-linux-desktop",
+
+    "7. Verify Global Installation\n"
+    "flutter --version",
+
+    "8. Updating Flutter\n"
+    "flutter upgrade"
+]
+
+pdf.set_font("Arial", 'B', 16)
+pdf.cell(200, 10, txt=title, ln=True, align='C')
+pdf.ln(10)
+pdf.set_font("Arial", size=12)
+
+for step in steps:
+    pdf.multi_cell(0, 10, step)
+    pdf.ln(2)
+
+pdf.output("Flutter_Installation_KaliLinux.pdf")
