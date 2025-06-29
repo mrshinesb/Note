@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kali Linux: Switch Between GUI and CLI</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+    h2 { color: #2e6da4; }
+    pre { background: #272822; color: #f8f8f2; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    code { color: #c7254e; background: #f9f2f4; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Kali Linux: Switch Between GUI and CLI Mode</h1>
+
+  <h2>🔁 Temporary: Switch to CLI (This Session Only)</h2>
+  <p>Use keyboard shortcuts to enter CLI mode:</p>
+  <pre><code>Ctrl + Alt + F2</code> (or F1 to F6)</pre>
+  <p>To return to GUI:</p>
+  <pre><code>Ctrl + Alt + F1</code> (or F7)</pre>
+
+  <h2>🔧 Permanent: Boot into CLI Only</h2>
+  <p>Run this command to change the default system target:</p>
+  <pre><code>sudo systemctl set-default multi-user.target</code></pre>
+  <p>Then reboot:</p>
+  <pre><code>sudo reboot</code></pre>
+
+  <h2>🔄 Switch Back to GUI Boot</h2>
+  <pre><code>sudo systemctl set-default graphical.target
+sudo reboot</code></pre>
+
+  <h2>✅ Manually Start GUI from CLI</h2>
+  <pre><code>startx</code></pre>
+  <p>Or:</p>
+  <pre><code>sudo systemctl start gdm3     # GNOME
+sudo systemctl start lightdm  # XFCE</code></pre>
+</body>
+</html>
