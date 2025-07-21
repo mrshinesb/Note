@@ -1,2 +1,6 @@
 git add .
 git commit -m "Initial commit"
+Create a new repo on GitHub
+git remote add origin git@github.com:mrshinesb/MySecondFlutterApp.git
+git push -u origin main
+
